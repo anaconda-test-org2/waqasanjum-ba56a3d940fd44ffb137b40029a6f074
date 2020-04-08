@@ -1,0 +1,27 @@
+name: HoloViz
+description: Visualizations with HoloViz.org tools. [Tutorial]
+
+packages:
+- python=3.7
+- notebook=6.0
+- pandas=0.24
+- dask=2.1
+- hvplot=0.4
+- matplotlib=3.0
+- panel=0.6
+- fastparquet=0.3
+- datashader=0.7
+- python-snappy=0.5
+- streamz=0.5
+- geoviews=1.6
+- cartopy=0.17
+channels: []
+
+commands:
+  notebook:
+    notebook: 0-Overview.ipynb
+  auto-dashboard:
+    unix: panel serve 4-Panels.ipynb
+
+env_specs:
+  anaconda201908_py37: {}
